@@ -3,7 +3,9 @@ import CategoryController from "../../controllers/categories/categories.controll
 
 const router = Router();
 
+
 router.post("/", CategoryController.createCategory);
 router.get("/", CategoryController.getCategories);
+
 
 export default router;
