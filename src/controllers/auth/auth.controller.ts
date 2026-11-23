@@ -7,7 +7,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 export class AuthControllers {
-    
+
     register = async(req: Request, res: Response) => {
         try {
             const validateData = registerSchema.parse(req.body);
@@ -54,7 +54,6 @@ export class AuthControllers {
 
         } catch (error : any){
             console.log(error);
-
             return res.status(500).json({
                 success: false,
                 message: "Internal server error",
