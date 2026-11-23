@@ -18,4 +18,5 @@ router.patch('/:id', authenticate, uploadSingleImage, PostsController.updateProd
 //delete
 router.delete('/:id', authenticate, PostsController.deleteProduct);
 
+
 export default router;
