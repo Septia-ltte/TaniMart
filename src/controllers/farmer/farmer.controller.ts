@@ -45,5 +45,4 @@ export class FarmerController {
         }
     }
 }
-
 export default new FarmerController();
